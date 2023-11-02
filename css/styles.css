@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid orange;
+    /* outline: 1px solid orange; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -106,7 +106,7 @@ h2 {
     position: relative;
 }
 
-.advantages-list li:nth-child(1) p::before  {
+.advantages-list li:nth-child(1) p::before {
     content: "";
     background-image: url("../images/advantage-icon-1\ 1.png");
     display: inline-block;
@@ -117,7 +117,7 @@ h2 {
     height: 68px;
 }
 
-.advantages-list li:nth-child(2) p::before  {
+.advantages-list li:nth-child(2) p::before {
     content: "";
     background-image: url("../images/advantage-icon-2\ 1.png");
     display: inline-block;
@@ -128,7 +128,7 @@ h2 {
     height: 68px;
 }
 
-.advantages-list li:nth-child(3) p::before  {
+.advantages-list li:nth-child(3) p::before {
     content: "";
     background-image: url("../images/advantage-icon-3\ 1.png");
     display: inline-block;
@@ -139,7 +139,7 @@ h2 {
     height: 68px;
 }
 
-.advantages-list li:nth-child(4) p::before  {
+.advantages-list li:nth-child(4) p::before {
     content: "";
     background-image: url("../images/advantage-icon-4\ 1.png");
     display: inline-block;
@@ -182,10 +182,10 @@ h2 {
 
 }
 
-header .container{
+header .container {
     background-image: url("../images/moon-rocket 1.png");
     background-repeat: no-repeat;
-    background-position: 100% 140px ;
+    background-position: 100% 140px;
     padding-bottom: 179px;
 }
 
@@ -208,9 +208,11 @@ header .container{
     text-align: left;
     width: 440px;
 }
+
 .moon-vacation .right-column {
     width: 443px;
 }
+
 .moon-vacation .container {
     display: flex;
     justify-content: space-between;
@@ -233,6 +235,7 @@ header .container{
     margin-left: 79px;
     flex-direction: column;
 }
+
 .moon-vacation .right-column .subtitle {
     width: 375px;
     margin-bottom: 44px;
@@ -276,18 +279,89 @@ header .container{
     font-family: Verdana;
     font-size: 14px;
 }
+
 .recomendation .subtitle {
     margin-bottom: 27px;
 }
+
 .recomendation .right-column .subtitle {
     margin-left: 71px;
 }
 
 footer {
     background-color: #131313;
+    padding-top: 60px;
+    padding-bottom: 88px;
 }
 
 .footer-menu {
     display: flex;
     justify-content: space-between;
+}
+
+.footer-submenu li a {
+    color: #888888;
+    font-family: Verdana;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer .company-title {
+    color: var(--Text, #D4D4D4);
+    font-weight: 400;
+    font-family: Verdana;
+}
+
+.footer-submenu-title {
+    color: var(--Text, #D4D4D4);
+    font-family: Verdana;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+
+.footer-logo-title {
+    margin-bottom: 110px;
+}
+
+footer .logo {
+    margin-right: 15px
+}
+
+.footer-logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.copyrights {
+    color: #555555;
+    font-family: Verdana;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-submenu {
+    margin-top: 70px;
+}
+
+.footer-submenu li {
+    margin-top: 27px;
+}
+
+.footer-submenu-title::after {
+    content: "";
+    width: 180px;
+    display: block;
+    height: 1px;
+    background-color: #555555;
+    position: absolute;
+    bottom: -12px;
+}
+
+.footer-menu li {
+    width: 180px;
 }
